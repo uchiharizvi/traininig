@@ -1,21 +1,22 @@
-package org.kavish.training.practice.nov092024;
+package org.kavish.training.practice.nov092024.multiplecards;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ExecutionCode {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //call backend Service
         ListBankCardsResponseTO responseTO = BackendSystem.getListBankCards();
         CardDetailsTO response = processResponse(responseTO);
         System.out.println(response.toString());
     }
 
-    private static CardDetailsTO processResponse(ListBankCardsResponseTO responseTO) {
+    private static CardDetailsTO processResponse(ListBankCardsResponseTO responseTO) throws Exception{
     CardDetailsTO frontEndResponseTO = new CardDetailsTO();
+    try {
         List<CardDetails> cardDetailsList = responseTO.getListBankCardsResponse()
                 .getCustomerCardDetailsList()
                 .stream()
+                .filter(customerCardDetail -> customerCardDetail.getLinkedCardInfo() != null)
                 .map(customerCardDetail -> {
                     CardDetails cardDetails = new CardDetails();
                     cardDetails.setCardNumber(customerCardDetail.getLinkedCardInfo().getCardNumber());
@@ -23,7 +24,12 @@ public class ExecutionCode {
                 })
                 .toList();
 
+
         frontEndResponseTO.setCardDetails(cardDetailsList);
+    } catch (Exception e) {
+        e.printStackTrace();
+        throw new RuntimeException(e.getMessage());
+    }
         return frontEndResponseTO;
     }
 }
