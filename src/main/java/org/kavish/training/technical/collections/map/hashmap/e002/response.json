@@ -1,0 +1,37 @@
+{
+  "cardData": [
+    {
+      "cardType": "Visa",
+      "cardNumber": "4111111111111111",
+      "expiryDate": "12/2025",
+      "billingAddress": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "postalCode": "12345"
+      }
+    },
+    {
+      "cardType": "Mastercard",
+      "cardNumber": "5555555555554444",
+      "expiryDate": "11/2026",
+      "billingAddress": {
+        "street": "456 Elm St",
+        "city": "Othertown",
+        "state": "NY",
+        "postalCode": "67890"
+      }
+    },
+    {
+      "cardType": "American Express",
+      "cardNumber": "371449635398431",
+      "expiryDate": "09/2024",
+      "billingAddress": {
+        "street": "789 Maple Ave",
+        "city": "Springfield",
+        "state": "IL",
+        "postalCode": "54321"
+      }
+    }
+  ]
+}

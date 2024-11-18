@@ -1,0 +1,30 @@
+Problem Statement
+E001 - Filter Even Numbers and Odd Numbers
+E002 - Square of all Numbers
+E003 - Count Strings Length Greater Than 5: Given a list of strings, use streams to count how many strings have a length greater than 5.
+E004 - Find First Greater Than 10: Given a list of integers, find the first element that is greater than 10 using streams.
+	5.	Convert List to Upper Case: Given a list of strings, convert all the strings to uppercase using streams.
+
+Intermediate Stream Operations
+
+	6.	Map and Filter Combined: Given a list of integers, square the numbers and filter out the ones that are greater than 50. Return the resulting list.
+	7.	Sum of Odd Numbers: Given a list of integers, sum all the odd numbers using streams.
+	8.	Find the Maximum Element: Given a list of integers, find the maximum element using streams.
+	9.	Group by Length: Given a list of strings, group the strings by their length using Collectors.groupingBy().
+	10.	Concatenate All Strings: Given a list of strings, concatenate them into a single string, separated by commas, using streams.
+
+Advanced Stream Operations
+
+	11.	FlatMap: Given a list of lists of integers, flatten the list and return a list of all the integers.
+	12.	Distinct: Given a list of integers with duplicates, remove duplicates using streams and return the unique values.
+	13.	Partition into Even and Odd: Given a list of integers, partition them into even and odd numbers using streams and return a map with the result.
+	14.	Collecting to a Set: Given a list of strings, collect the distinct strings into a Set using streams.
+	15.	Joining Strings: Given a list of strings, join them together using Collectors.joining(), with a space between each string.
+
+Practical Stream Use Cases
+
+	16.	Calculate Average Age: Given a list of people with ages, calculate the average age using streams.
+	17.	Find All Prime Numbers: Given a list of integers, use streams to find all the prime numbers in the list.
+	18.	Map to Custom Object: Given a list of names, create a list of Person objects with each name being mapped to the Person constructor. Then, sort the list by age.
+	19.	Remove Nulls and Empty Strings: Given a list of strings, remove all null and empty strings using streams.
+	20.	Sort by Length: Given a list of strings, sort the strings by their length using streams.

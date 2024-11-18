@@ -1,0 +1,18 @@
+Problem Statement
+Suppose you receive a large JSON response containing hundreds or even thousands of CardData entries.
+Each entry includes details about a customer’s card, such as the card type, card number, expiry date, and billing address.
+
+Write a function that groups these card entries by cardType and stores them in a HashMap.
+The cardType should be the key, and the value should be a list of all CardData entries that have the same cardType.
+The function should then allow easy retrieval of all cards of a particular type (e.g., all Visa cards, all Mastercard cards).
+
+Requirements
+************
+
+	1.	Create a function groupCardsByType(List<CardData> cards) that:
+	    a) Accepts a list of CardData objects.
+		b) Returns a HashMap<String, List<CardData>>, where each key is a cardType (e.g., “Visa”, “Mastercard”)
+		    and each value is a list of CardData entries of that type.
+	2.	After grouping, implement a method to retrieve all cards of a specific type from this HashMap, for example, getCardsByType("Visa").
+	3.	If the requested cardType does not exist, the function should return an empty list.
+
