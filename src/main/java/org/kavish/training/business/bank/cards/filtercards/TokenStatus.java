@@ -1,5 +1,5 @@
-package org.kavish.training.usecase.business.bank.cards.filtercards;
+package org.kavish.training.business.bank.cards.filtercards;
 
 public enum TokenStatus {
-    A,P
+    Activated,Requires_Activation
 }

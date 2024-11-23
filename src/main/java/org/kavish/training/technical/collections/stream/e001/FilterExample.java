@@ -1,4 +1,4 @@
-package org.kavish.training.usecase.collections.stream.e001;
+package org.kavish.training.technical.collections.stream.e001;
 
 import org.kavish.training.utils.NumberUtils;
 

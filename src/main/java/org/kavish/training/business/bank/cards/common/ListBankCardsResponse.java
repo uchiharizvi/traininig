@@ -1,7 +1,7 @@
-package org.kavish.training.usecase.business.bank.cards.common;
+package org.kavish.training.business.bank.cards.common;
 
-import org.kavish.training.usecase.business.bank.cards.multiplecards.CustomerCardDetails;
-import org.kavish.training.usecase.business.bank.cards.multiplecards.CustomerInformation;
+import org.kavish.training.business.bank.cards.multiplecards.CustomerCardDetails;
+import org.kavish.training.business.bank.cards.multiplecards.CustomerInformation;
 
 import java.util.List;
 

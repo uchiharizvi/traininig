@@ -1,4 +1,6 @@
-package org.kavish.training.usecase.business.bank.cards.filtercards;
+package org.kavish.training.business.bank.cards.digitalwallets.caller.walletsdk.apple.model.request;
+
+import org.kavish.training.business.bank.cards.filtercards.TokenStatus;
 
 public class CardTokenDetails {
     private String lastFourCardNumber;

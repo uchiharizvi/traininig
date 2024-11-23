@@ -1,8 +1,8 @@
 package org.kavish.training.business.bank.cards.digitalwallets.service.carddetails;
 
-import org.kavish.training.business.bank.cards.common.WalletName;
 import org.kavish.training.business.bank.cards.objectbuilder.CardDetailsResponseTO;
+import org.kavish.training.business.bank.cards.digitalwallets.caller.walletsdk.apple.model.request.AppleCardDetailsRequest;
 
 public interface CardDetailsService {
-    CardDetailsResponseTO listCardDetails(WalletName walletName, String customerNumber, String companyNumber) throws Exception;
+    CardDetailsResponseTO getCardDetails(AppleCardDetailsRequest cardDetailsRequest) throws Exception;
 }

@@ -1,4 +1,4 @@
-package org.kavish.training.common;
+package org.kavish.training.utils;
 
 import java.util.ArrayList;
 import java.util.List;

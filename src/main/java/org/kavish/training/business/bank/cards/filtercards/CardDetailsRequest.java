@@ -1,6 +1,7 @@
-package org.kavish.training.usecase.business.bank.cards.filtercards;
+package org.kavish.training.business.bank.cards.filtercards;
 
-import org.kavish.training.usecase.business.bank.cards.common.WalletName;
+import org.kavish.training.business.bank.cards.common.WalletName;
+import org.kavish.training.business.bank.cards.digitalwallets.caller.walletsdk.apple.model.request.CardTokenDetails;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.kavish.training.usecase.business.bank.cards.multiplecards;
+package org.kavish.training.business.bank.cards.multiplecards;
 
 import java.util.List;
 

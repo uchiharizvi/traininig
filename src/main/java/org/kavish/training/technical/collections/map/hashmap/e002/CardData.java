@@ -1,4 +1,4 @@
-package org.kavish.training.usecase.collections.map.hashmap.e002;
+package org.kavish.training.technical.collections.map.hashmap.e002;
 
 import java.util.List;
 

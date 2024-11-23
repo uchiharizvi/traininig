@@ -1,4 +1,4 @@
-package org.kavish.training.usecase.business.bank.cards.common;
+package org.kavish.training.business.bank.cards.common;
 
 public class ResponseBuilder {
     public static ListBankCardsResponseTO buildListBankCardsResponse() {

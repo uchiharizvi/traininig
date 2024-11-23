@@ -1,13 +1,15 @@
-package org.kavish.training.usecase.business.bank.cards.objectbuilder;
+package org.kavish.training.business.bank.cards.objectbuilder;
 
-import org.kavish.training.usecase.business.bank.cards.common.WalletName;
+import org.kavish.training.business.bank.cards.common.WalletName;
+import org.kavish.training.business.bank.cards.digitalwallets.caller.walletsdk.apple.model.request.AppleCardDetailsRequest;
+import org.kavish.training.business.bank.cards.digitalwallets.service.carddetails.CardDetailsService;
 
 /**
  * Solution for
  * Sonar error “may expose internal representation by storing externally mutable object”
  *
  */
-public class CardDetailsServiceImpl implements CardDetails {
+public class CardDetailsServiceImpl implements CardDetailsService {
     private final CardDetailsResponseMapper cardDetailsResponseMapper;
 
     public CardDetailsServiceImpl(CardDetailsResponseMapper cardDetailsResponseMapper) {
@@ -17,7 +19,7 @@ public class CardDetailsServiceImpl implements CardDetails {
     }
 
     @Override
-    public CardDetailsResponseTO listCardDetails(WalletName walletName, String customerNumber, String companyNumber) throws Exception {
+    public CardDetailsResponseTO getCardDetails(AppleCardDetailsRequest cardDetailsRequest) throws Exception {
         CardDetailsResponseTO responseTO = null;
         try {
             //rest call

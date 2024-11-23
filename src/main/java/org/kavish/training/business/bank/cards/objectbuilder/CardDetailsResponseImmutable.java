@@ -1,4 +1,4 @@
-package org.kavish.training.usecase.business.bank.cards.objectbuilder;
+package org.kavish.training.business.bank.cards.objectbuilder;
 
 public class CardDetailsResponseImmutable {
     //Assume some fields here

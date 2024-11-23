@@ -1,6 +1,6 @@
-package org.kavish.training.usecase.collections.map.hashmap.e002;
+package org.kavish.training.technical.collections.map.hashmap.e002;
 
-import org.kavish.training.usecase.business.bank.cards.multiplecards.BillingAddress;
+import org.kavish.training.business.bank.cards.multiplecards.BillingAddress;
 
 public class Card {
     private String cardType;

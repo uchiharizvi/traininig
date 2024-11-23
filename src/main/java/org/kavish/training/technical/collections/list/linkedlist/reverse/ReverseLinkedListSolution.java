@@ -1,4 +1,4 @@
-package org.kavish.training.usecase.collections.list.linkedlist.reverse;
+package org.kavish.training.technical.collections.list.linkedlist.reverse;
 
 public class ReverseLinkedListSolution {
     public static void main(String[] args) {
